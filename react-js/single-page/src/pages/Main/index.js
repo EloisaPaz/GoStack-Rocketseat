@@ -1,7 +1,11 @@
 import React from 'react';
+import { Title } from './styles';
 
-function Main() {
-  return <h1>Main</h1>
+export default function Main() {
+  return (
+    <Title error={false}>
+      Main
+      <small>menor</small>
+    </Title>
+  );
 }
-
-export default Main;
