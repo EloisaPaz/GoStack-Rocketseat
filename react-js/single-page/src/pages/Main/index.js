@@ -3,9 +3,8 @@ import { Title } from './styles';
 
 export default function Main() {
   return (
-    <Title error={false}>
+    <Title>
       Main
-      <small>menor</small>
     </Title>
   );
 }
