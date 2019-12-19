@@ -1,14 +1,23 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import api from '../../services/api';
 // import { Container } from './styles';
 
 export default class Repository extends Component {
 
-state = {
-  repository: {},
-  issues: [],
-  loading: true,
-}
+  static propTypes = {
+    match: PropTypes.shape({
+      params: PropTypes.shape({
+        repository: PropTypes.string,
+      }),
+    }).isRequired,
+  };
+
+  state = {
+    repository: {},
+    issues: [],
+    loading: true,
+  }
 
   async componentDidMount() {
     const { match } = this.props;
