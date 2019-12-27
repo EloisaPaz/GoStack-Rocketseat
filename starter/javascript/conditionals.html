@@ -1,0 +1,34 @@
+<html>
+  <head>
+    <title>Curso Javascript</title>
+  </head>
+  <body>
+    <script>
+      function returnFruit(fruit) {
+        if(fruit === 'A') {
+          return 'Apple';
+        }else if(fruit === 'S') {
+          return 'Strawberry';
+        }else { 
+          return 'Another fruit';
+        }
+      }
+      
+      var fruitResult = returnFruit('A');
+
+      function returnToys(toy) {
+        switch(toy){
+          case 'D':
+            return 'Doll';
+          case 'T':
+            return 'Teddy Bear';
+          default: 
+            return 'Another toy';
+        }
+      }
+
+      var toyResult = returnToys('D');
+
+    </script>  
+  </body>
+</html>

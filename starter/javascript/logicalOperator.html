@@ -1,0 +1,33 @@
+<html>
+  <head>
+    <title>Curso Javascript</title>
+  </head>
+  <body>
+    <script>
+      var sex = 'M';
+      var age = 23;
+
+      if(sex === 'M' && age >= 18) {
+        return 'OK';
+      }
+
+      if(sex === 'M' || age >= 18) {
+        return 'OK';
+      }
+
+      if(sex != 'M' || age >= 18) {
+        return 'OK';
+      }
+
+      var male;
+      if(sex === 'M') {
+        male = true;
+      } else {
+        male = false;
+      }
+
+      var anotherMale = (sex === 'M');
+
+    </script>  
+  </body>
+</html>
